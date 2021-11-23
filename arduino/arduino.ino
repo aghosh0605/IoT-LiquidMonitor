@@ -3,9 +3,9 @@
 #include <WiFiClient.h>
 #include <ArduinoJson.h> //v5.13.5
 
-const char *ssid = "TOR";
-const char *password = "8640067542";
-const char* serverName = "http://192.168.29.112/temp";
+const char *ssid = "POCO F1";
+const char *password = "9434852054";
+const char* serverName = "http://192.168.43.239:4444/temp";
 void setup()
 {
     Serial.begin(115200);
@@ -35,8 +35,9 @@ void loop()
 
         StaticJsonBuffer<200> jsonBuffer;
         JsonObject &root = jsonBuffer.createObject();
-        root["name"] = "krishna";
-        root["tech"] = "motion";
+        root["temp"] = 105;
+        root["ph"] = 7.5;
+        root["oxygen"] = 96;
         //root["va"] = "No";
         //root.printTo(Serial);
         /*int httpResponseCode = http.POST("{\n\t\"id\":\"urn:ngsi-ld:Sensor:001\", \"type\":\"MotionSensor\",\n\t\"value\":\"NO\"\n}"); */
@@ -62,5 +63,5 @@ void loop()
     {
         Serial.println("Error in WiFi connection");
     }
-    delay(300000);
+    delay(3000);
 }
