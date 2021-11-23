@@ -1,20 +1,31 @@
+const { Decimal128 } = require("bson");
 const mongoose = require("mongoose");
+require("dotenv").config();
+
+var dbcollection = process.env.COLLECTION;
 
 const documentSchema = new mongoose.Schema({
-  name: {
+  uuid: {
     type: String,
     required: true,
   },
-  tech: {
-    type: String,
+  time: {
+    type: Decimal128,
     required: true,
   },
-  sub: {
-    type: Boolean,
+  temp: {
+    type: Decimal128,
     required: true,
-    default: false,
+  },
+  ph: {
+    type: Decimal128,
+    required: true,
+  },
+  oxygen: {
+    type: Decimal128,
+    required: true,
   },
 });
 
-//Arduino1 is the MongoDB collection name that the database will create
-module.exports = mongoose.model("Arduino1", documentSchema);
+//arduino1 is the MongoDB collection name that the database will create
+module.exports = mongoose.model(dbcollection, documentSchema);

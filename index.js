@@ -1,4 +1,5 @@
 //Start Server with 'nodemon run start'
+//Database name can be changed in Mongo URI in .env
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
