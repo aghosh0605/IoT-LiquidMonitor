@@ -18,3 +18,7 @@ Run `node index.js` to run the server.
   3. Mongodb
   4. dotenv
   5. date-and time
+
+## Notes
+- Database name can be changed in MongoURI in `.env` file.
+- Collection Name can be changed in `document.js` in `Schema` Folder
