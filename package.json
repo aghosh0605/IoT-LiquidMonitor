@@ -18,6 +18,10 @@
     "mongoose": "^6.0.5",
     "uniqid": "^5.4.0"
   },
+  "engines": {
+    "node": "14.17.6",
+    "npm": "7.24.1"
+  },
   "devDependencies": {
     "nodemon": "^2.0.3"
   }

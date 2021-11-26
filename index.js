@@ -8,7 +8,7 @@ const dateTime = require("date-and-time");
 
 //Variables to change as need
 mongoUrl =
-  "mongodb+srv://alexaskill:alexaskill123@cluster0.4cueg.mongodb.net/test?authSource=admin&replicaSet=atlas-w7mfxj-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true";
+  "mongodb+srv://alexaskill:alexaskill123@cluster0.4cueg.mongodb.net/water?authSource=admin&replicaSet=atlas-w7mfxj-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true";
 port = process.env.PORT;
 
 //Starting Framework
