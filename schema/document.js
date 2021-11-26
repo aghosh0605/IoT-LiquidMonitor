@@ -2,7 +2,7 @@ const { Decimal128 } = require("bson");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-var dbcollection = process.env.COLLECTION;
+var dbcollection = "arduino1";
 
 const documentSchema = new mongoose.Schema({
   uuid: {
