@@ -22,4 +22,4 @@ Run `node index.js` to run the server.
 ## Notes
 - Database name can be changed in MongoURI in `.env` file.
 - Collection Name can be changed in `document.js` in `Schema` Folder
-- Don't use the MongoDB URI that is available for MongoDB compass. It will conflict with Heroku. Use the URI that is available for NodeJS APP Development.
+- Don't use the **MongoDB URI** that is available for **MongoDB compass**. It will conflict with Heroku. Use the URI that is available for **NodeJS APP** Development.
