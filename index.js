@@ -9,7 +9,7 @@ const dateTime = require("date-and-time");
 //Variables to change as need
 mongoUrl =
   "mongodb+srv://alexaskill:alexaskill123@cluster0.4cueg.mongodb.net/lake-1";
-port = process.env.PORT || 8080;
+port = process.env.PORT;
 
 //Starting Framework
 const app = express();
