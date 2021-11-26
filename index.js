@@ -7,8 +7,7 @@ const mongoose = require("mongoose");
 const dateTime = require("date-and-time");
 
 //Variables to change as need
-mongoUrl =
-  "mongodb+srv://alexaskill:alexaskill123@cluster0.4cueg.mongodb.net/lake-1?authSource=admin&replicaSet=atlas-w7mfxj-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true";
+mongoUrl = process.env.URL;
 port = process.env.PORT;
 
 //Starting Framework
