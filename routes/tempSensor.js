@@ -17,6 +17,7 @@ router.get("/", async (req, res) => {
   try {
     const temp = await schema.find();
     res.send(JSON.stringify(temp));
+    console.log("Data Send!");
   } catch (err) {
     res.send("GET Error Dtected: " + err);
   }

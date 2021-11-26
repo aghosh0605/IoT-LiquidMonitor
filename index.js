@@ -2,6 +2,7 @@
 //Database name can be changed in Mongo URI in .env
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
 const dateTime = require("date-and-time");
 
@@ -36,7 +37,7 @@ connectionHolder.on("open", () => {
 });
 
 //Routing Traffic
-app.use(express.json());
+app.use(express.json(), cors());
 const tempSensor = require("./routes/tempSensor");
 app.use("/temp", tempSensor);
 
