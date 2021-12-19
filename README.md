@@ -1,4 +1,6 @@
 # IOT-LiquidMonitor
+Deployed Link https://water-sample.herokuapp.com/temp
+(Maybe sometime it takes time as MongoDB datbase are paused if they are not used for somedays)
 
 ### How to run the server as dev 
 Open the server root directory and run command `nodemon run start` to start the server. Main server name is **index.js**.
