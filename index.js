@@ -40,6 +40,7 @@ connectionHolder.on("open", () => {
 app.use(express.json(), cors());
 const tempSensor = require("./routes/tempSensor");
 app.use("/temp", tempSensor);
+app.use(express.static("./client/build/"));
 
 //Starting Date Time Framework
 const now = new Date();
